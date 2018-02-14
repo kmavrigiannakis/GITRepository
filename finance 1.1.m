@@ -1,4 +1,4 @@
-clear;
+%clear;
 clc;
 
 rho=0.1;
@@ -22,3 +22,4 @@ plot(Y, normpdf(Y,0,1));
 
 reg1 = regstats(Y,X)
 
+%regression
