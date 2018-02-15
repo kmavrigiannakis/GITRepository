@@ -1,0 +1,260 @@
+
+\documentclass{report}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Thursday, February 15, 2018 00:51:26}
+%TCIDATA{LastRevised=Thursday, February 15, 2018 01:24:26}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Report">}
+%TCIDATA{CSTFile=40 LaTeX Report.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+\title{Standard 
+%TCIMACRO{\TeXButton{LaTeX}{\LaTeX{}} }%
+%BeginExpansion
+\LaTeX{}
+%EndExpansion
+Report}
+\author{The Author}
+\date{The Date}
+\maketitle
+\tableofcontents
+
+\part{Topics In Finance: Assignment 1}
+
+\bigskip 
+
+\section{\protect\bigskip Introduction}
+
+In this first assignment, it was asked to create two random samples X and Y
+respectively, of 1000 observations from an i.i.d N(0,1) distribution where Y
+has a 10\% correlation with X. Afterwards, a simple OLS regression of Y on X
+should be provided and perform a regression analysis
+
+\bigskip 
+
+\section{Implementation}
+
+\bigskip 
+
+By performing the following regression:
+
+$Y=a+bX+e$
+
+\bigskip I get the following estimated equation:
+
+$\overline{Y}~=-0.009+0.0996X$
+
+$\ \ \ \ \ \ \ \ \ \ ()~$
+
+\qquad \qquad \qquad \qquad \qquad 
+
+\section{Mathematics and Text}
+
+Let $H$ be a Hilbert space, $C$ be a closed bounded convex subset of $H$, $T$
+a nonexpansive self map of $C$. Suppose that as $n\rightarrow \infty $, $%
+a_{n,k}\rightarrow 0$ for each $k$, and $\gamma _{n}=\sum_{k=0}^{\infty
+}\left( a_{n,k+1}-a_{n,k}\right) ^{+}\rightarrow 0$. Then for each $x$ in $C$%
+, $A_{n}x=\sum_{k=0}^{\infty }a_{n,k}T^{k}x$ converges weakly to a fixed
+point of $T$ .
+
+The numbered equation 
+\begin{equation}
+u_{tt}-\Delta u+u^{5}+u\left| u\right| ^{p-2}=0\text{ in }\mathbf{R}%
+^{3}\times \left[ 0,\infty \right[  \label{eqn1}
+\end{equation}%
+is automatically numbered as equation \ref{eqn1}.
+
+\section{Lists Environments}
+
+You can create numbered, bulleted, and description lists using the Item Tag
+popup list on the Tag toolbar.
+
+\begin{enumerate}
+\item List item 1
+
+\item List item 2
+
+\begin{enumerate}
+\item A list item under a list item.
+
+The typeset style for this level is different than the screen style. The
+screen shows a lower case alphabetic character followed by a period while
+the typeset style uses a lower case alphabetic character surrounded by
+parentheses.
+
+\item Just another list item under a list item.
+
+\begin{enumerate}
+\item Third level list item under a list item.
+
+\begin{enumerate}
+\item Fourth and final level of list items allowed.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\begin{itemize}
+\item Bullet item 1
+
+\item Bullet item 2
+
+\begin{itemize}
+\item Second level bullet item.
+
+\begin{itemize}
+\item Third level bullet item.
+
+\begin{itemize}
+\item Fourth (and final) level bullet item.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\begin{description}
+\item[Description List] Each description list item has a term followed by
+the description of that term. Double click the term box to enter the term,
+or to change it.
+
+\item[Bunyip] Mythical beast of Australian Aboriginal legends.
+\end{description}
+
+\section{Theorem-Like Environments}
+
+The following theorem-like environments (in alphabetical order) are
+available in this style.
+
+\begin{acknowledgement}
+This is an acknowledgement
+\end{acknowledgement}
+
+\begin{algorithm}
+This is an algorithm
+\end{algorithm}
+
+\begin{axiom}
+This is an axiom
+\end{axiom}
+
+\begin{case}
+This is a case
+\end{case}
+
+\begin{claim}
+This is a claim
+\end{claim}
+
+\begin{conclusion}
+This is a conclusion
+\end{conclusion}
+
+\begin{condition}
+This is a condition
+\end{condition}
+
+\begin{conjecture}
+This is a conjecture
+\end{conjecture}
+
+\begin{corollary}
+This is a corollary
+\end{corollary}
+
+\begin{criterion}
+This is a criterion
+\end{criterion}
+
+\begin{definition}
+This is a definition
+\end{definition}
+
+\begin{example}
+This is an example
+\end{example}
+
+\begin{exercise}
+This is an exercise
+\end{exercise}
+
+\begin{lemma}
+This is a lemma
+\end{lemma}
+
+\begin{proof}
+This is the proof of the lemma.
+\end{proof}
+
+\begin{notation}
+This is notation
+\end{notation}
+
+\begin{problem}
+This is a problem
+\end{problem}
+
+\begin{proposition}
+This is a proposition
+\end{proposition}
+
+\begin{remark}
+This is a remark
+\end{remark}
+
+\begin{solution}
+This is a solution
+\end{solution}
+
+\begin{summary}
+This is a summary
+\end{summary}
+
+\begin{theorem}
+This is a theorem
+\end{theorem}
+
+\begin{proof}[Proof of the Main Theorem]
+This is the proof.
+\end{proof}
+
+\appendix
+
+\chapter{The First Appendix}
+
+The appendix fragment is used only once. Subsequent appendices can be
+created using the Chapter Section/Body Tag.
+
+\end{document}
