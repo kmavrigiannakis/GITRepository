@@ -1,0 +1,108 @@
+
+\documentclass{report}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Thursday, February 15, 2018 00:51:26}
+%TCIDATA{LastRevised=Thursday, February 15, 2018 02:05:11}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Report">}
+%TCIDATA{CSTFile=40 LaTeX Report.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+\title{Standard 
+%TCIMACRO{\TeXButton{LaTeX}{\LaTeX{}} }%
+%BeginExpansion
+\LaTeX{}
+%EndExpansion
+Report}
+\author{The Author}
+\date{The Date}
+\maketitle
+\tableofcontents
+
+\part{Topics In Finance: Assignment 1}
+
+\bigskip 
+
+\section{\protect\bigskip Introduction}
+
+In this first assignment, it was asked to create two random samples X and Y
+respectively, of 1000 observations from an i.i.d N(0,1) distribution where Y
+has a 10\% correlation with X. Afterwards, a simple OLS regression of Y on X
+should be provided and perform a regression analysis
+
+\bigskip 
+
+\section{Implementation}
+
+By performing the following regression:
+
+$Y=a+bX+e~$
+
+\bigskip I get the following estimated equation:
+
+$\overline{Y}~=-0.009+0.0996X$
+
+$\ \ \ \ \ \ (0.0641)~\ (3.1742)$
+
+\qquad $(0.4986)~\ (0.0015)$
+
+$R^{2}=0.01$
+
+$Root~MSE~=1.006$
+
+\section{Conclusions}
+
+\bigskip Taking into consideration the aforementioned estimates, the
+following conclusions can be drawn:
+
+1. Firstly, the coefficient of X is almost 0.01, as the correlation
+coefficient between Y and X. This doesn't surprise us, as the coefficient $b$
+in the univariate ols regression, is estimated as the correlation
+coefficient, i.e. the ratio between the covariance of X and Y over the
+variance of X. 
+
+2. Secondly, this coefficient is statistical significant, with confidence
+99.85\%
+
+3. The constant term, $a$, is statistical insignificant, as the p-value of
+the estimate is 0.5, i.e. I do not reject the null hypothesis that this term
+is equal to 0.
+
+4. $R^{2}~$is~0.01, which also makes sense, as we have a univariate
+regression, meaning that Y is explained by X, by 10\%, which is the
+correlation coefficient.
+
+\end{document}
